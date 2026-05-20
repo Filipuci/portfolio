@@ -10,6 +10,18 @@ body {
   font-family: 'Satoshi', sans-serif;
 }
 
+.bg-hero {
+  background:
+    radial-gradient(circle at 74% 42%,
+      rgba(194, 132, 74, 0.045) 0%,
+      rgba(194, 132, 74, 0.018) 22%,
+      transparent 42%),
+    linear-gradient(90deg,
+      #030303 0%,
+      #040404 55%,
+      #060606 100%)
+}
+
 @theme inline {
   --font-heading: var(--font-sans);
   --font-sans: 'Geist Variable', sans-serif;
@@ -126,9 +138,11 @@ body {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   html {
     @apply font-sans;
   }
