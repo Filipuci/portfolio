@@ -67,6 +67,7 @@ body {
 
 :root {
   --background: oklch(1 0 0);
+  --background-gradient: none;
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -102,6 +103,15 @@ body {
 
 .dark {
   --background: oklch(0.145 0 0);
+  --background-gradient:
+    radial-gradient(circle at 74% 42%,
+      rgba(194, 132, 74, 0.045) 0%,
+      rgba(194, 132, 74, 0.018) 22%,
+      transparent 42%),
+    linear-gradient(90deg,
+      #030303 0%,
+      #040404 55%,
+      #060606 100%);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
@@ -140,7 +150,7 @@ body {
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground dark:bg-[image:var(--background-gradient)];
   }
 
   html {

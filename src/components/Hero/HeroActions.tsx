@@ -5,7 +5,9 @@ import { Button } from "../ui/button"
 export const HeroActions = () => {
   return (
     <div className="flex gap-5">
-      <Button className="p-5 cursor-pointer"><Download /> Baixar CV</Button>
+      <a href="/Rafael_Filipuci_CV.pdf" download>
+        <Button className="p-5 cursor-pointer"><Download /> Baixar CV</Button>
+      </a>
       <Button className="bg-[#030303] p-5 border border-white/10 text-white/60">
         <a
           href="https://github.com/Filipuci"
@@ -14,7 +16,7 @@ export const HeroActions = () => {
           aria-label="GitHub"
           className="hover:text-white transition duration-300"
         >
-          <Github aria-hidden="true"/>
+          <Github aria-hidden="true" />
         </a>
         <span className="text-white/10 mx-2">|</span>
         <a
@@ -24,7 +26,7 @@ export const HeroActions = () => {
           aria-label="LinkedIn"
           className="hover:text-white transition duration-300"
         >
-          <Linkedin aria-hidden="true"/>
+          <Linkedin aria-hidden="true" />
         </a>
       </Button>
     </div>

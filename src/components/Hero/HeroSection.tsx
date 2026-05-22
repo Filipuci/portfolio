@@ -4,7 +4,7 @@ import { Separator } from "../ui/separator"
 
 export const HeroSection = () => {
   return (
-    <section className="bg-hero" aria-label="Seção principal">
+    <section aria-label="Seção principal">
       <div className="relative h-dvh overflow-hidden">
         <div className="container mx-auto h-full flex flex-col">
           <HeroHeader />
