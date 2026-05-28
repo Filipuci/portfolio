@@ -1,5 +1,5 @@
 import { ModeToggle } from "../mode-toggle"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuTrigger } from "../ui/dropdown-menu"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "../ui/dropdown-menu"
 
 const NAV_LINKS = [
   { href: "#", label: "Inicio" },

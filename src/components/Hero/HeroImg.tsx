@@ -2,7 +2,7 @@ import heroPerson from "../../assets/images/hero/hero-person.png"
 
 export const HeroImg = () => {
   return (
-    <div className="absolute right-0 top-10 h-full hidden lg:block" role="img" aria-label="Foto de Rafael Filipuci">
+    <div className="absolute right-0 top-10 h-full hidden lg:block pointer-events-none" role="img" aria-label="Foto de Rafael Filipuci">
       <div
         aria-hidden="true"
         className="absolute -right-30 -top-5 w-80 h-80 rounded-full blur-3xl z-0"

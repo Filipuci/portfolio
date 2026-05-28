@@ -8,7 +8,7 @@ export const HeroActions = () => {
       <a href="/Rafael_Filipuci_CV.pdf" download>
         <Button className="p-5 cursor-pointer"><Download /> Baixar CV</Button>
       </a>
-      <Button className="bg-[#030303] p-5 border border-white/10 text-white/60">
+      <Button className="bg-[#030303] p-5 border border-white/10 text-white/60 hover:border-white/20 transition duration-300">
         <a
           href="https://github.com/Filipuci"
           target="_blank"
