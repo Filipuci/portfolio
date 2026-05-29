@@ -4,7 +4,7 @@ import { Button } from "../ui/button"
 
 export const HeroActions = () => {
   return (
-    <div className="flex gap-5">
+    <div className="flex gap-5 animate-fade-up opacity-0 [animation-delay:500ms]">
       <a href="/Rafael_Filipuci_CV.pdf" download>
         <Button className="p-5 cursor-pointer"><Download /> Baixar CV</Button>
       </a>

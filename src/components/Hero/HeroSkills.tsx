@@ -2,7 +2,7 @@ const skills = ['React', 'TypeScript', 'TailwindCSS', 'UI/UX']
 
 export const HeroSkills = () => {
   return (
-    <div>
+    <div className="animate-fade-up opacity-0 [animation-delay:600ms]">
       <p className="text-white/40 text-sm mt-15 text-center lg:text-left">Especializado em</p>
       <ul className="mt-3 flex gap-5">
         {skills.map(skill => (
