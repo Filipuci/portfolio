@@ -8,7 +8,7 @@ export const HeroSkills = () => {
         {skills.map(skill => (
           <li
             key={skill}
-            className="text-[#bea181] select-none"
+            className="select-none"
             aria-label={skill}
           >
             {skill}
