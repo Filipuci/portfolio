@@ -25,7 +25,7 @@ const menuBtnClass = "h-0.5 w-5 bg-white"
 export const HeroHeader = () => {
   return (
     <header className="flex gap-5 justify-between pt-10 pb-3 px-2">
-      <div className="flex gap-1 items-center text-xl select-none"><span className="font-bold">Rafael</span>Filipuci</div>
+      <div className="flex gap-1 items-center text-xl select-none font-extrabold">Rafael<span className="text-white/40">Filipuci</span></div>
       <div className="flex items-center gap-3 md:hidden">
         <ModeToggle />
         <DropdownMenu>
