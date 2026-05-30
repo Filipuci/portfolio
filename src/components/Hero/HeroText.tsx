@@ -1,6 +1,6 @@
 import { useTypingAnimation } from "@/hooks/useTypingAnimation"
 
-const ROTATING_WORDS = ['modernas', 'acessíveis', 'escaláveis', 'intuitivas', 'minimalistas']
+const ROTATING_WORDS = ['modernas', 'acessíveis', 'escaláveis', 'intuitivas']
 const gradientTextClass = `
     select-none text-center 
     sm:text-left text-6xl 
