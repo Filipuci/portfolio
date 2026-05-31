@@ -6,15 +6,6 @@ import PortfolioImg from "@/assets/images/projects/PortfolioImg.png"
 
 export const ProjectData: ProjectType[] = [
   {
-    category: 'Web app',
-    title: 'Pokedéx',
-    shortDescription: 'Pokédex desenvolvida com React, TypeScript, TanStack Query e Axios, com paginação, cache e carregamento dinâmico de dados.',
-    image: PokedexImg,
-    technologies: ['React', 'TypeScript', 'TailwindCSS', 'TanStack Query', 'Axios'],
-    codeUrl: 'https://github.com/Filipuci/pokedex-react',
-    projectUrl: 'https://pokedex-react-filipuci.vercel.app/'
-  },
-  {
     category: 'Form',
     title: 'Sign up Form Validation',
     shortDescription: 'Formulário de cadastro com React Hook Form, validação com Zod e feedback de UX.',
@@ -42,3 +33,13 @@ export const ProjectData: ProjectType[] = [
     projectUrl: 'https://chat-app-context.vercel.app/'
   },
 ]
+
+export const FeaturedProjectData: ProjectType = {
+  category: 'Web app',
+  title: 'Pokedéx',
+  shortDescription: 'Pokédex desenvolvida com React, TypeScript, TanStack Query e Axios, com paginação, cache e carregamento dinâmico de dados.',
+  image: PokedexImg,
+  technologies: ['React', 'TypeScript', 'TailwindCSS', 'TanStack Query', 'Axios'],
+  codeUrl: 'https://github.com/Filipuci/pokedex-react',
+  projectUrl: 'https://pokedex-react-filipuci.vercel.app/'
+}
