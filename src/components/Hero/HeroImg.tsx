@@ -1,16 +1,16 @@
-import heroPerson from "../../assets/images/hero/hero-person.png"
+import heroPerson from "@/assets/images/hero/hero-person.png"
 
 export const HeroImg = () => {
   return (
     <div className="absolute right-0 top-10 h-full hidden lg:block pointer-events-none animate-fade-up opacity-0 [animation-delay:200ms]" role="img" aria-label="Foto de Rafael Filipuci">
-<div
-  aria-hidden="true"
-  className="absolute -right-30 -top-5 w-80 h-80 rounded-full blur-3xl z-0"
-  style={{
-    background:
-      "radial-gradient(circle, rgba(255,255,255,0.16) 0%, rgba(240,235,255,0.08) 35%, transparent 72%)",
-  }}
-/>
+      <div
+        aria-hidden="true"
+        className="absolute -right-30 -top-5 w-80 h-80 rounded-full blur-3xl z-0"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(255,255,255,0.16) 0%, rgba(240,235,255,0.08) 35%, transparent 72%)",
+        }}
+      />
 
       <div
         aria-hidden="true"
@@ -22,11 +22,6 @@ export const HeroImg = () => {
       />
 
       <img src={heroPerson} className="h-full w-auto relative z-10" />
-
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 bg-linear-to-t from-[#030303] via-[#030303]/10 to-transparent pointer-events-none"
-      />
     </div>
   )
 }
