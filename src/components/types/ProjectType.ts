@@ -3,5 +3,7 @@ export type ProjectType = {
   title: string,
   shortDescription: string,
   image: string,
-  technologies: string[]
+  technologies: string[],
+  codeUrl: string,
+  projectUrl: string
 }

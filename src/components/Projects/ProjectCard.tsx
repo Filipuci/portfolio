@@ -36,7 +36,10 @@ export const ProjectCard = ({ project }: Props) => {
               <div className="px-3 py-1 rounded-sm bg-[#1a1b1e]">{technology}</div>
             ))}
           </div>
-          <ProjectActions />
+          <ProjectActions 
+            codeUrl={project.codeUrl}
+            projectUrl={project.projectUrl}
+          />
         </div>
 
       </CardContent>
