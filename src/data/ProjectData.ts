@@ -6,7 +6,7 @@ import PortfolioImg from "@/assets/images/projects/PortfolioImg.png"
 
 export const ProjectData: ProjectType[] = [
   {
-    category: 'Form',
+    category: 'FORM',
     title: 'Sign up Form Validation',
     shortDescription: 'Formulário de cadastro com React Hook Form, validação com Zod e feedback de UX.',
     image: SignupFormValidationImg,
@@ -15,7 +15,7 @@ export const ProjectData: ProjectType[] = [
     projectUrl: 'https://signup-form-validation-pi.vercel.app/'
   },
   {
-    category: 'Landing Page',
+    category: 'LANDING PAGE',
     title: 'Portfólio',
     shortDescription: 'Meu portfólio pessoal desenvolvido com foco em perfomance, acessibilidade e design minimalista',
     image: PortfolioImg,
@@ -24,7 +24,7 @@ export const ProjectData: ProjectType[] = [
     projectUrl: ''
   },
   {
-    category: 'Study Project',
+    category: 'STUDY PROJECT',
     title: 'Chat App',
     shortDescription: 'Projeto focado em gerenciamento de estado global com Context API e persistência local utilizando LocalStorage.',
     image: ChatAppImg,
@@ -35,8 +35,8 @@ export const ProjectData: ProjectType[] = [
 ]
 
 export const FeaturedProjectData: ProjectType = {
-  category: 'Web app',
-  title: 'Pokedéx',
+  category: 'EM DESTAQUE',
+  title: 'PokeDex',
   shortDescription: 'Pokédex desenvolvida com React, TypeScript, TanStack Query e Axios, com paginação, cache e carregamento dinâmico de dados.',
   image: PokedexImg,
   technologies: ['React', 'TypeScript', 'TailwindCSS', 'TanStack Query', 'Axios'],
