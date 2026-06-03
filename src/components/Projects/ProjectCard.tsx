@@ -9,11 +9,10 @@ type Props = {
 
 export const ProjectCard = ({ project }: Props) => {
   return (
-
-    <RevealOnScroll threshold={0.1}>
+    <RevealOnScroll threshold={0.1} className="mt-3 sm:mt-0">
       <Card className="hover:-translate-y-0.5 transition-transform duration-300">
         <CardContent className="flex gap-4">
-          <div className="flex items-center">
+          <div className="hidden sm:flex sm:items-center">
             <img
               src={project.image}
               alt={`Screenshot do projeto ${project.title}`}
@@ -31,13 +30,13 @@ export const ProjectCard = ({ project }: Props) => {
             />
           </div>
 
-          <div>
+          <div className="flex flex-col items-center text-center sm:block sm:text-left">
             <div className="bg-[#151829] rounded-sm px-2 inline-block select-none">
               <span className="text-category-project font-semibold text-[12px]">{project.category}</span>
             </div>
             <h1 className="font-bold text-xl my-2 select-none">{project.title}</h1>
             <p className="text-white/60 mb-5">{project.shortDescription}</p>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex justify-center sm:justify-start flex-wrap gap-2">
               {project.technologies.map(technology => (
                 <div
                   key={technology}

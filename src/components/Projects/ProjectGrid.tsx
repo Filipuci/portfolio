@@ -4,7 +4,7 @@ import { FeaturedProjectCard } from "./FeaturedProjectCard"
 
 export const ProjectGrid = () => {
   return (
-    <div className="grid grid-cols-3 gap-3 pt-3">
+    <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-3 pt-3">
       <FeaturedProjectCard project={FeaturedProjectData}/>
 
       {ProjectData.map(project => (
