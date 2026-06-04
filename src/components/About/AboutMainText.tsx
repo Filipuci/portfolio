@@ -1,7 +1,5 @@
 import { RevealOnScroll } from "../common/RevealOnScroll"
-
-export const aboutTextClass = 'text-white/70 my-6 w-[60%] text-center lg:w-full lg:text-left'
-export const aboutTitleClass = 'select-none text-category-project text-sm font-semibold mb-3'
+import { aboutTextClass, aboutTitleClass } from "./constants"
 
 export const AboutMainText = () => {
   return (
@@ -11,7 +9,7 @@ export const AboutMainText = () => {
       </RevealOnScroll>
 
       <RevealOnScroll threshold={0.4}>
-        <h1 className={'select-none text-6xl font-semibold mb-3'}>Mais sobre mim<span className="text-category-project">.</span></h1>
+        <h1 className={'select-none text-6xl font-semibold mb-3'}>Minha trajetória<span className="text-category-project">.</span></h1>
       </RevealOnScroll>
 
       <RevealOnScroll threshold={0.4} className="flex flex-col">
