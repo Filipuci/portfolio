@@ -6,19 +6,19 @@ const aboutTechnologiesList = ['React', 'TypeScript', 'TailwindCSS', 'Shadcn/UI'
 
 export const AboutTechnologies = () => {
   return (
-    <div className="mt-10">
+    <div className="mt-10 text-center lg:text-start lg:pl-15 xl:pl-0">
       <RevealOnScroll>
         <p className={aboutTitleClass}>TECNOLOGIAS</p>
       </RevealOnScroll>
 
       <RevealOnScroll>
-        <ul className="flex gap-5 items-center">
+        <ul className="flex flex-wrap lg:flex-nowrap gap-5 items-center justify-center lg:justify-start">
           {aboutTechnologiesList.map((technology, index) => (
             <li key={technology} className="flex items-center gap-5">
               <p>{technology}</p>
 
               {index < aboutTechnologiesList.length - 1 && (
-                <p className={separatorClass}>•</p>
+                <p className={`${separatorClass} hidden lg:block`}>•</p>
               )}
             </li>
           ))}

@@ -5,7 +5,7 @@ type Props = {
   children: React.ReactNode,
   className?: string,
   threshold?: number,
-  animation?: "animate-fade-up" | "animate-fade-right"
+  animation?: string
 }
 
 export const RevealOnScroll = ({ children, className, threshold, animation = "animate-fade-up" }: Props) => {
