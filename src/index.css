@@ -52,9 +52,8 @@ body {
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
-
-  --animate-hero-image: hero-image 1s ease-out forwards;
   --animate-fade-up: fade-up 1s ease-out forwards;
+  --animate-fade-right: fade-right 1s ease-out forwards;
 
   @keyframes fade-up {
     from {
@@ -68,15 +67,15 @@ body {
     }
   }
 
-  @keyframes hero-image {
+  @keyframes fade-right {
     from {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateX(20px);
     }
 
     to {
       opacity: 1;
-      transform: translateY(0)
+      transform: translateX(0)
     }
   }
 }

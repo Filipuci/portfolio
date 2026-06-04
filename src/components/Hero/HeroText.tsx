@@ -15,7 +15,7 @@ export const HeroText = () => {
 
   return (
     <>
-      <p className="select-none text-white/40 text-sm mb-6 animate-fade-up [animation-delay:0ms]">FRONT-END DEVELOPER</p>
+      <p className="select-none text-white/40 text-sm mb-6 animate-fade-up [animation-delay:0ms]">DESENVOLVEDOR FRONT-END</p>
       <p className="select-none text-6xl font-semibold animate-fade-up opacity-0 [animation-delay:100ms]">Criando</p>
       <div className={`${gradientTextClass} flex flex-col min-[1550px]:flex-row min-[1550px]:gap-2 animate-fade-up opacity-0 [animation-delay:200ms]`}>
         <p>interfaces</p>
