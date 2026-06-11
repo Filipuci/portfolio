@@ -33,7 +33,7 @@ Assunto: ${data.subject}
 
 Mensagem: ${data.message}
       `
-    const url = `https://wa.me//${import.meta.env.VITE_PUBLIC_ZAP}?text=${encodeURIComponent(text)}`
+    const url = `https://wa.me/${import.meta.env.VITE_PUBLIC_ZAP}?text=${encodeURIComponent(text)}`
     window.open(url, '_blank')
     form.reset()
   }
