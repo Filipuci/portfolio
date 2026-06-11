@@ -1,3 +1,4 @@
+import { headlineClass, textClass } from "../common/constants"
 import { RevealOnScroll } from "../common/RevealOnScroll"
 
 export const ProjectHeader = () => {
@@ -9,11 +10,11 @@ export const ProjectHeader = () => {
       </RevealOnScroll>
 
       <RevealOnScroll threshold={0.4}>
-        <h1 className='select-none text-6xl font-semibold mb-3'>Projetos que contam minha evolução</h1>
+        <h1 className={headlineClass}>Projetos que contam minha evolução</h1>
       </RevealOnScroll>
 
       <RevealOnScroll threshold={0.4} className="flex justify-center">
-        <p className='text-white/70 my-6 w-[60%] text-center lg:w-full lg:text-left'>
+        <p className={`${textClass} my-6`}>
           Cada projeto representa um desafio diferente, uma habilidade aprendida
           e um passo a mais na minha jornada como desenvolvedor front-end.
         </p>
