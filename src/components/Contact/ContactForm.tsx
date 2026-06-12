@@ -39,14 +39,14 @@ Mensagem: ${data.message}
   }
 
   return (
-    <div className="w-1/3">
-      <RevealOnScroll>
+    <div className="lg:min-w-1/3">
+      <RevealOnScroll className="flex flex-col items-center lg:block">
         <h1 className="font-semibold text-xl">Vamos conversar no WhatsApp</h1>
         <p className={textClass}>Preencha os campos abaixo e envie sua mensagem.</p>
         <p className={textClass}>Você será redirecionado para o WhatsApp.</p>
       </RevealOnScroll>
 
-      <form onSubmit={form.handleSubmit(onSubmit)} className="mt-10">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="mt-10 w-75 mx-auto sm:mx-0 sm:w-full">
         <RevealOnScroll>
           <Controller
             name="name"
@@ -82,7 +82,7 @@ Mensagem: ${data.message}
 
                   <SelectContent alignItemWithTrigger={false}>
                     <SelectItem value="Oportunidade de emprego">Oportunidade de emprego</SelectItem>
-                    <SelectItem value="Free lance">Freelance</SelectItem>
+                    <SelectItem value="Freelance">Freelance</SelectItem>
                     <SelectItem value="Outro">Outro</SelectItem>
                   </SelectContent>
                 </Select>
@@ -120,8 +120,8 @@ Mensagem: ${data.message}
             <Whatsapp className="mr-1" /> Iniciar conversa no WhatsApp <ArrowRight className="ml-1" />
           </Button>
 
-          <p className={`flex items-center gap-2 mt-3 text-sm ${textClass}`}>
-            <Lock className="w-4" /> Sua mensagem será aberta diretamente no WhatsApp.
+          <p className={`mt-3 w-full text-sm sm:w-auto sm:flex sm:items-center sm:gap-2 ${textClass}`}>
+            <Lock className="w-4 inline mr-1 mb-1 sm:block sm:mr-0 sm:mb-0" /> Sua mensagem será aberta diretamente no WhatsApp.
           </p>
         </RevealOnScroll>
 

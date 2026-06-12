@@ -6,7 +6,7 @@ const aboutTechnologiesList = ['React', 'TypeScript', 'TailwindCSS', 'Shadcn/UI'
 
 export const AboutTechnologies = () => {
   return (
-    <div className="mt-10 text-center lg:text-start lg:pl-15 xl:pl-0">
+    <div className="text-center lg:text-start">
       <RevealOnScroll>
         <p className={titleClass}>TECNOLOGIAS</p>
       </RevealOnScroll>

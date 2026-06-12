@@ -1,16 +1,14 @@
-import { Separator } from "../ui/separator"
 import { AboutMainText } from "./AboutMainText"
 import { AboutTechnologies } from "./AboutTechnologies"
 import { AboutTimeLine } from "./AboutTimeLine"
 
 export const AboutSection = () => {
   return (
-    <section aria-label="Seção sobre mim" id="about" className="container mx-auto min-h-dvh flex flex-col mt-26">
-      <div className="flex flex-col items-center gap-x-40 mb-20 lg:pl-15 lg:flex-row lg:items-start xl:pl-0">
+    <section aria-label="Seção sobre mim" id="about" className="container mx-auto mb-40 flex flex-col mt-26 lg:px-8">
+      <div className="flex flex-col items-center gap-x-60 mb-20 lg:flex-row lg:items-start lg:justify-start ">
         <AboutMainText />
         <AboutTimeLine />
       </div>
-      <Separator />
       <AboutTechnologies />
     </section>
   )

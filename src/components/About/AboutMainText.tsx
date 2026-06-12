@@ -3,7 +3,7 @@ import { headlineClass, textClass, titleClass } from "../common/constants"
 
 export const AboutMainText = () => {
   return (
-    <div className="text-center lg:text-start lg:max-w-2/6 xl:max-w-2/5 xl:pl-10 2xl:pl-0">
+    <div className="text-center lg:text-start lg:max-w-2/6 xl:max-w-2/5">
       <RevealOnScroll threshold={0.4}>
         <p className={titleClass}>SOBRE MIM</p>
       </RevealOnScroll>
