@@ -1,73 +1,90 @@
-# React + TypeScript + Vite
+# Portfólio — Rafael Filipuci
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfólio pessoal desenvolvido com foco em performance, acessibilidade e código bem estruturado. Dark, minimalista e responsivo.
 
-Currently, two official plugins are available:
+🔗 **https://rafael-filipuci.vercel.app**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Seções
 
-## React Compiler
+- **Hero** — apresentação com animação de digitação e foto editorial
+- **Projetos** — destaque para o projeto principal + grid de projetos
+- **Sobre mim** — trajetória, experiência profissional e tecnologias
+- **Contato** — formulário com validação e integração via WhatsApp
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologias
 
-## Expanding the ESLint configuration
+- React
+- TypeScript
+- Vite
+- TailwindCSS v4
+- Shadcn/UI + BaseUI
+- React Hook Form
+- Zod
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Rodando localmente
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Clone o repositório
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/Filipuci/portfolio.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Entre na pasta
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd portfolio
 ```
+
+### Instale as dependências
+
+```bash
+npm install
+```
+
+### Configure as variáveis de ambiente
+
+```bash
+cp .env.example .env
+```
+
+Abra o arquivo `.env` e preencha com seus dados:
+
+```env
+VITE_PUBLIC_ZAP=55SEUDDDSEUNUMERO
+```
+
+O número deve conter:
+
+- DDI (55)
+- DDD
+- Número
+
+Sem espaços ou caracteres especiais.
+
+Exemplo:
+
+```env
+VITE_PUBLIC_ZAP=5511999999999
+```
+
+### Inicie o servidor de desenvolvimento
+
+```bash
+npm run dev
+```
+
+## Deploy
+
+O projeto está hospedado na Vercel.
+
+Para realizar seu próprio deploy, configure a variável de ambiente `VITE_PUBLIC_ZAP` no painel da Vercel:
+
+```txt
+Settings → Environment Variables
+```
+
+## Licença
+
+Este projeto é pessoal.
+
+Sinta-se livre para se inspirar na estrutura e implementação, mas evite copiar diretamente o conteúdo, identidade visual ou design.
