@@ -6,7 +6,7 @@ import { HeroText } from "./HeroText"
 export const HeroContent = () => {
   return (
     <div className="relative flex-1 flex items-start pt-25">
-      <div className="w-full flex flex-col items-center lg:w-[42%] lg:block">
+      <div className="w-full flex flex-col items-center xl:w-[43%] 2xl:w-[42%] xl:block">
         <HeroText />
         <HeroActions />
         <HeroSkills />
