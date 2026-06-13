@@ -1,4 +1,3 @@
-import { ModeToggle } from "../mode-toggle"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "../ui/dropdown-menu"
 
 const NAV_LINKS = [
@@ -28,7 +27,6 @@ export const HeroHeader = () => {
       <div className="container mx-auto flex gap-5 justify-between pt-10 pb-3 px-2">
         <div className="flex gap-1 items-center text-xl select-none font-extrabold">Rafael<span className="text-white/40">Filipuci</span></div>
         <div className="flex items-center gap-3 md:hidden">
-          <ModeToggle />
           <DropdownMenu>
             <DropdownMenuTrigger className="flex flex-col gap-1">
               <div className={menuBtnClass}></div>
@@ -59,7 +57,6 @@ export const HeroHeader = () => {
               ))}
             </ul>
           </nav>
-          <ModeToggle />
         </div>
       </div>
 
