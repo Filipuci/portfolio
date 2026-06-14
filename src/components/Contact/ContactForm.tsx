@@ -103,7 +103,7 @@ Mensagem: ${data.message}
                 <Textarea
                   {...field}
                   placeholder="Conte um pouco sobre seu projeto ou ideia..."
-                  className="h-60 resize-none pt-7 pb-2"
+                  className="h-60 resize-none pt-7 pb-2 overflow-y-auto field-sizing-fixed"
                   id={field.name}
                   aria-invalid={fieldState.invalid} />
                 {fieldState.invalid && <FieldError errors={[fieldState.error]} />}
