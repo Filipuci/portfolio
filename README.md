@@ -4,6 +4,9 @@ Portfólio pessoal desenvolvido com foco em performance, acessibilidade e códig
 
 🔗 **https://rafael-filipuci.vercel.app**
 
+<img width="1892" height="979" alt="image" src="https://github.com/user-attachments/assets/8c240cfe-c2d0-431d-b352-05735f15d40d" />
+
+
 ## Seções
 
 - **Hero** — apresentação com animação de digitação e foto editorial
